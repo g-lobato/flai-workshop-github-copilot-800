@@ -1,0 +1,308 @@
+/* OctoFit Tracker Custom Styles */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  background-attachment: fixed;
+}
+
+/* Navigation Bar Enhancements */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%) !important;
+  padding: 0.75rem 1rem;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  margin-right: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #ffffff !important;
+  border-radius: 6px;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.25rem;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link:active, .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Container Enhancements */
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a365d;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0066cc;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 0.5rem;
+}
+
+/* Table Enhancements */
+.table {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 102, 204, 0.05);
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 102, 204, 0.15);
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 1rem;
+  color: #2d3748;
+}
+
+/* Card Enhancements */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.15);
+}
+
+.hover-card {
+  cursor: pointer;
+  border: 2px solid rgba(0, 102, 204, 0.1);
+}
+
+.hover-card:hover {
+  border-color: rgba(0, 102, 204, 0.5);
+  background-color: rgba(0, 102, 204, 0.02);
+}
+
+.card-title {
+  color: #0066cc;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Badge Styling */
+.badge {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* Button Enhancements */
+.btn {
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0052a3 0%, #003875 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 102, 204, 0.3);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* Alert Enhancements */
+.alert {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* List Group Enhancements */
+.list-group-item {
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  border-left-color: #0066cc;
+  background-color: rgba(0, 102, 204, 0.05);
+  transform: translateX(5px);
+}
+
+/* Link Styling */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #004999;
+  text-decoration: underline;
+}
+
+/* Jumbotron Enhancement */
+.jumbotron {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 73, 153, 0.1) 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  border: 2px solid rgba(0, 102, 204, 0.2);
+}
+
+/* Loading and Error States */
+.spinner-border {
+  color: #0066cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Rank badges for leaderboard */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.rank-1 {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #744210;
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+  color: #505050;
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #cd7f32 0%, #e89f71 100%);
+  color: #3d2817;
+}
+
+.rank-other {
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+  color: #2d3748;
+}
